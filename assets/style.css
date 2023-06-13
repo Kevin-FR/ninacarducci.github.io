@@ -1,3 +1,4 @@
+
 body {
 	max-width: 1920px;
 	margin: auto;
@@ -354,3 +355,10 @@ input[type="submit"] {
 	}
 }
 
+@media (min-width:700px) {
+	.carousel-control-next-icon, .carousel-control-prev-icon {
+		width: 5em;
+		height: 5em;
+	
+	}
+}

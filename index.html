@@ -25,10 +25,10 @@
 		<div class="nav">
 			<nav>
 				<ul>
-					<li><a href="#about">À propos</a></li>
-					<li><a href="#gallery">Galerie</a></li>
-					<li><a href="#services">Service</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#about" >À propos</a></li>
+					<li><a href="#gallery" >Galerie</a></li>
+					<li><a href="#services" >Service</a></li>
+					<li><a href="#contact" >Contact</a></li>
 					<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
 							target="_blank"><img src="assets/images/instagram.webp" alt="Logo instagram"></a></li>
 				</ul>
@@ -60,12 +60,12 @@
 				<button type="button"  onclick="carouselChange(null,3)" class="carousel-dots"
 					aria-label="Slide 3"></button>
 			</div>
-			<button class="carousel-control-prev" type="button"
+			<button class="carousel-control-prev" type="button" aria-label="Precedent"
 				data-bs-slide="prev" onclick="carouselChange(-1)">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				<span class="visually-hidden" >Previous</span>
 			</button>
-			<button class="carousel-control-next" type="button "
+			<button class="carousel-control-next" type="button " aria-label="Suivant"
 				data-bs-slide="next" onclick="carouselChange(1)">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Next</span>
@@ -136,8 +136,8 @@
 		<div id="modal" class="modal">
 			<img class="modal-content" id="modal-image">
 			<span class="close" onclick="closeModal()">&times;</span>
-			<a class="prev" onclick="changeImage(-1)">&#10094;</a>
-			<a class="next" onclick="changeImage(1)">&#10095;</a>
+			<button class="prev" onclick="changeImage(-1)">&#10094;</button>
+			<button class="next" onclick="changeImage(1)">&#10095;</button>
 		</div>
 	</div>
 

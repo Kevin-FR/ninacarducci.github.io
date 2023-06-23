@@ -3,14 +3,19 @@ const modal = document.getElementById("modal");
 const modalImage = document.getElementById("modal-image");
 const galleryItems = document.getElementsByClassName("gallery-item");
 const filters = document.querySelectorAll(".gallery-filter li");
+const extensionLargeImage = "_xl.webp";
 
+function imageLarge(filename) {
+    const src =  filename.substring(0, filename.lastIndexOf('.')) || filename;
+    return src + extensionLargeImage;
+  };
 
 let currentIndex = 0;
 // Afficher la modale avec l'image sélectionnée
 function openModal(index) {
     currentIndex = index;
     modal.style.display = "block";
-    modalImage.src = galleryItems[index].src;
+    modalImage.src = imageLarge(galleryItems[index].src);
 }
 
 // Fermer la modale
@@ -26,7 +31,7 @@ function changeImage(n) {
     } else if (currentIndex < 0) {
         currentIndex = galleryItems.length - 1;
     }
-    modalImage.src = galleryItems[currentIndex].src;
+    modalImage.src = imageLarge(galleryItems[currentIndex].src);
 }
 
 // Ajouter des événements de clic aux images de la galerie

@@ -24,14 +24,13 @@
 		<h1 class="name">Nina Carducci</h1>
 		<div class="nav">
 			<nav>
-				<ul>
-					<li><a href="#about" >À propos</a></li>
-					<li><a href="#gallery" >Galerie</a></li>
-					<li><a href="#services" >Service</a></li>
-					<li><a href="#contact" >Contact</a></li>
-					<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-							target="_blank"><img src="assets/images/instagram.webp" alt="Logo instagram"></a></li>
-				</ul>
+					<button><a href="#about" >À propos</a></button>
+					<button><a href="#gallery" >Galerie</a></button>
+					<button><a href="#services" >Service</a></button>
+					<button><a href="#contact" >Contact</a></button>
+					<button><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+							target="_blank"><img src="assets/images/instagram.webp" alt="Logo instagram"></a></button>
+				
 			</nav>
 		</div>
 	</div>
@@ -92,12 +91,10 @@
 	<div id="gallery">
 		<h2 class="title">Portfolio</h2>
 		<div class="gallery-filter">
-			<ul>
-				<li onclick="filterItems('Tous')" class="gallery-filter-active" >Tous</li>
-				<li onclick="filterItems('Concert')" >Concert</li>
-				<li onclick="filterItems('Entreprises')" >Entreprises</li>
-				<li onclick="filterItems('Mariages')" >Mariages</li>
-			</ul>
+				<button onclick="filterItems('Tous')" class="gallery-filter-button gallery-filter-active" tabindex="0">Tous</button>
+				<button onclick="filterItems('Concert')" class="gallery-filter-button">Concert</button>
+				<button onclick="filterItems('Entreprises')" class="gallery-filter-button">Entreprises</button>
+				<button onclick="filterItems('Mariages')" class="gallery-filter-button">Mariages</button>
 		</div>
 		
 		<div class="container">
@@ -134,8 +131,8 @@
 			</figure>
 		</div>
 		<div id="modal" class="modal">
-			<img class="modal-content" id="modal-image">
-			<span class="close" onclick="closeModal()">&times;</span>
+			<img class="modal-content" id="modal-image" alt="Affichage de la gallerie">
+			<button class="close" onclick="closeModal()">&times;</button>
 			<button class="prev" onclick="changeImage(-1)">&#10094;</button>
 			<button class="next" onclick="changeImage(1)">&#10095;</button>
 		</div>

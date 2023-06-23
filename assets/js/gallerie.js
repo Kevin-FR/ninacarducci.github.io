@@ -2,7 +2,7 @@
 const modal = document.getElementById("modal");
 const modalImage = document.getElementById("modal-image");
 const galleryItems = document.getElementsByClassName("gallery-item");
-const filters = document.querySelectorAll(".gallery-filter li");
+const filters = document.querySelectorAll(".gallery-filter button");
 const extensionLargeImage = "_xl.webp";
 
 function imageLarge(filename) {

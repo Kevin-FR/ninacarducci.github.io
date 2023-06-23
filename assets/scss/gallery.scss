@@ -1,14 +1,17 @@
 .gallery{
     &-filter{
-        ul{
+        
             display: flex;
             flex-direction: row;
             justify-content: center;
-        }
-        li{
+        
+            &-button{
+            border: none;
+            background: none;
             list-style: none;
             padding: 15px;
             cursor: pointer;
+            
         }
         &-active{
             background-color: #2e5b6b;

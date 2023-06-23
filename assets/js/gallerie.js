@@ -64,7 +64,3 @@ function filterItems(nameFilter){
     }
 
 }
-
-
-// Ajouter un événement de clic pour fermer la modale
-//modal.addEventListener("click", closeModal);

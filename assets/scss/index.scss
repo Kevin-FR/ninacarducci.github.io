@@ -1,8 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Spectral&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap');
 
 body {
     max-width: 1920px;
     margin: auto;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.75rem;
+}
+h3{
+    font-size: 1.5rem;
 }
 .container{
     max-width: 1320px;
@@ -11,6 +20,7 @@ body {
 * {
     font-family: 'Inter';
     font-style: normal;
+    font-size: 1rem;
 }
 #header{
     position: relative;
@@ -32,9 +42,6 @@ body {
     align-items: center;
 }
 
-.top-header .name {
-    font-size: 26px;
-}
 
 .nav {
     display: flex;

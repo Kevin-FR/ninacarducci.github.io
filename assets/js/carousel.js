@@ -1,6 +1,7 @@
 const carourelItems = document.querySelectorAll('.carousel-item');
 const carouselDots = document.querySelectorAll('.carousel-dots');
 let carouselIndex = 0;
+
 console.log(carourelItems[0]);
 
 function carouselChange(a,b){
@@ -26,3 +27,5 @@ function carouselChange(a,b){
     }
 
 }
+
+
